@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Twitter-clone</title>
+  <link rel="stylesheet" href="twheader.css">
+  <style>
+
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var searchInput = document.querySelector('.searchbar');
+      var searchIcon = document.querySelector('.search-icon');
+
+      searchInput.addEventListener('focus', function () {
+        searchIcon.src = 'search-icon-blue.png'; // Change to the path of your blue search icon
+        searchIcon.style.width = '20px'; // Adjusted width
+        searchIcon.style.height = '20px'; // Adjusted height
+      });
+
+      searchInput.addEventListener('blur', function () {
+        searchIcon.src = 'search_icon.svg'; // Change to the path of your default search icon
+        searchIcon.style.width = '17px'; // Set back to initial width
+        searchIcon.style.height = '17`px'; // Set back to initial height
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-all">
+      <div class="sec1">
+        <div class="for-you">For you</div>
+        <div class="following">Following</div>
+        <div class="setting">set</div>
+      </div>
+      <div class="sec2">
+        <div class='sec2-container'>
+          <div class="searchbar-icon-div">
+            <img class="search-icon" src="search_icon.svg" alt="">
+          </div>
+          <div class="searchbar-box"><input class="searchbar" type="text" placeholder="Search"></div>  
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+</html>
