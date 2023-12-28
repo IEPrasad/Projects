@@ -1,6 +1,10 @@
+*{
+  font-family: sans-serif;
+}
+
 header {
   position: fixed;
-  left: 60px;
+  left: 65px;
   right: 0;
   top: 0;
   height: 55px;
@@ -17,18 +21,19 @@ header {
 }
 
 .sec1 {
-  width: 550px;
+  width: 620px;
   height: 52px;
   border: 1px solid rgb(178, 217, 222);
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .for-you,
 .following,
 .setting {
-  width: 250px;
+  width: 280px;
   height: 50px;
   margin-left: -2px;
   align-items: center;
@@ -72,14 +77,15 @@ header {
 }
 
 .searchbar-icon-div {
-  height: 38px;
-  width: 38px;
+  height: 42px;
+  width: 42px;
   background-color: rgb(233, 240, 244);
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: left;
+  margin-left: 0px;
 }
 
 .search-icon {
@@ -87,11 +93,12 @@ header {
   width: 17px;  /* Initial width */
   margin-left: 10px; /* Adjusted margin */
   color-scheme: gray;
+  padding-left: 10px;
 }
 
 .searchbar {
-  height: 36px;
-  width: 220px;
+  height: 40px;
+  width: 240px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border: none;
